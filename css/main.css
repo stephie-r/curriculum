@@ -45,6 +45,21 @@ ul {
 	margin: 0;
 	padding: 0 0 0 25px;
 }
+/* links */
+a:link{
+	color: #1eac94;
+}
+
+a:visited{
+	color: #48cfb9
+}
+
+a:hover{
+	color: #995ce2;
+}
+
+
+
 .wrapper {
 	background: #fff;
 	margin: auto;
