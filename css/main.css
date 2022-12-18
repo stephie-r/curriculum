@@ -2,9 +2,13 @@ html {
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
+	box-sizing: border-box;
+	font-size: 16px;
+	--g-font: 'PT Sans', sans-serif;
 }
+
 body {
-	font-family: 'Vollkorn', sans-serif;
+	font-family: var(--g-font);
 	line-height: 1.5;
 	color: #555;
 	background: #9e9ea0;
@@ -16,21 +20,28 @@ header {
 	padding-bottom: 30px;
 	margin-bottom: 30px;
 }
-h1, h2, h3, h4 {
-	line-height: 1;
+
+header a{
+	letter-spacing: 0.5rem;
+	text-decoration: none;	
+	text-transform: uppercase;
 }
 
-h1, h2 {
-	font-family: 'Unica One', 'Helvetica' ,sans-serif;
-	 text-transform: uppercase;
+ h2, h3, h4 {
+	line-height: 1.05;
 }
 
 h1 {
+	font-family: 'Emblema One' ,sans-serif;
+	text-transform:capitalize;
+	letter-spacing: 2px;
 	font-size: 32px;
 	color: #1a948c;
-	margin: 0;
-	font-weight: 100;
+	margin: 1%;
+	line-height: 1.5;
+	font-weight: 300;
 }
+
 h2 {
 	font-size: 24px;
 	color: #1fa79e;
@@ -38,19 +49,27 @@ h2 {
 	font-weight: 600;
 }
 h3 {
-	text-transform: capitalize;
 	font-size: 18px;
-	line-height: 21px;
 	color: #000;
 	margin: 15px 0 0;
+	font-weight: 100;
 }
+
+h4{
+	font-size: 12px;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+
 p {
 	margin: 5px 0;
 }
+
 ul {
 	margin: 0;
 	padding: 0 0 0 25px;
 }
+
 /* links */
 a:link{
 	color: #1eac94;
@@ -65,7 +84,6 @@ a:hover{
 }
 
 
-
 .wrapper {
 	background: #fff;
 	margin: auto;
@@ -74,15 +92,20 @@ a:hover{
 	border: 4px double #ccc;
 }
 .date {
-	font: 15px 'Unica One', sans-serif;
+	font: 0.7rem 'Unica One', sans-serif;
 	color: #999;
 	margin-bottom: 9px;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 main {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 30px;
+}
+
+.titulo-edu h3{
+	color: #bcbcbc;
+	font-size: 0.9rem;
 }
 
 @media (min-width: 700px) {
